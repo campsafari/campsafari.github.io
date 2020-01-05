@@ -249,13 +249,13 @@ export default {
             {
                 title: 'ADC Germany Bronze',
                 date: '2000',
-                project: '',
+                project: 'Shawne Fielding Microsite',
                 description: '',
             },
             {
                 title: 'Cannes Cyberlions Nominee',
                 date: '2000',
-                project: '',
+                project: 'Recon Store',
                 description: '',
             },
         ],
