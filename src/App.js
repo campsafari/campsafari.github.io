@@ -92,7 +92,7 @@ function App() {
                         key={ index }
                         title={ item.title }
                         subtitle={ item.project }
-                        date={ formatDate( item.date ) }
+                        date={ item.date }
                         details={ item.description }
                     />
                 ) }
