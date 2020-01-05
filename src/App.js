@@ -22,7 +22,8 @@ const months = [
 
 function formatDate( datestr ) {
     if ( datestr ) {
-        const date = new Date( datestr )
+        const parts = datestr.split('.');
+        const date = new Date( Date.UTC(parts[2],parts[1]-1, parts[0]) )
         return `${ months[date.getMonth()] } ${ date.getFullYear() }`
     }
     return ''
@@ -31,7 +32,7 @@ function formatDate( datestr ) {
 
 function App() {
     return (
-        <div className="app">
+        <div className="app horizontal-pad-large">
             <section className="section bottom-space-xlarge flex-container flex-dir-row">
                 <div className={ 'info-box bottom-space-large right-space-small' }>
                     <div>
