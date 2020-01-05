@@ -56,19 +56,6 @@ function App() {
                 </div>
             </section>
 
-
-            <ItemGrid
-                title={ Portfolio.roles.title }
-                items={ Portfolio.roles.items }
-                renderItem={ ( item, index ) => (
-                    <Item
-                        key={ index }
-                        title={ item.company }
-                        subtitle={ item.role }
-                        date={ `${ formatDate( item.from ) } - ${ formatDate( item.to ) }` }
-                    />
-                ) }
-            />
             <ItemGrid
                 title={ Portfolio.projects.title }
                 items={ Portfolio.projects.items }
@@ -81,6 +68,19 @@ function App() {
                         details={ 'Tools: ' + item.tools }
                         description={ item.description }
                         link={ item.link }
+                    />
+                ) }
+            />
+
+            <ItemGrid
+                title={ Portfolio.roles.title }
+                items={ Portfolio.roles.items }
+                renderItem={ ( item, index ) => (
+                    <Item
+                        key={ index }
+                        title={ item.company }
+                        subtitle={ item.role }
+                        date={ `${ formatDate( item.from ) } - ${ formatDate( item.to ) }` }
                     />
                 ) }
             />

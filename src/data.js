@@ -15,7 +15,7 @@ export default {
     },
 
     'roles': {
-        title: 'Where:',
+        title: 'Where i worked:',
         items: [
             {
                 'from': '01.05.2017',
