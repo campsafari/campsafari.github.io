@@ -1,11 +1,16 @@
 body {
-    background: #eee;
     font-family: "Lekton", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        background: #eee;
+    @media screen {
+    }
 }
 
 .app {
     max-width: 1024px;
     margin: 16px auto;
+    @media screen {
+        padding-top: 16px;
+    }
 }
 
 
@@ -19,6 +24,14 @@ h1, h2, h3, h4 {
 
 .flex-dir-row {
     flex-direction: row;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.no-wrap {
+    white-space: nowrap;
 }
 
 $spacing: (
@@ -117,32 +130,46 @@ $spacing: (
 }
 
 
+
 .item-grid {
     margin: 0 -8px;
     display: flex;
     flex-wrap: wrap;
-    .cell {
-        width: 33.333%;
-        padding: 0 8px;
-        box-sizing: border-box;
-        margin-bottom: 8px;
+
+    @media screen {
+        .cell {
+            width: 33.333%;
+            padding: 0 8px;
+            box-sizing: border-box;
+            margin-bottom: 8px;
+        }
+    }
+
+    @media print {
+        margin: 0;
+        .cell {
+            width: 100%;
+            margin-bottom: 8px;
+        }
     }
 }
 
 .info-box {
-    flex-shrink: 0;
-    width: 200px;
-    height: 200px;
+    -webkit-print-color-adjust: exact;
     padding: 16px;
+    flex-shrink: 0;
     box-sizing: border-box;
     text-align: left;
-    color: #fff;
-    background: #333;
     display: flex;
     flex-direction: column;
+    font-size: 14px;
+    width: 200px;
+    height: 200px;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    color: #fff;
+    background: #333;
+
 }
 
 .info-name {

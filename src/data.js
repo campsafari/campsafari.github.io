@@ -12,6 +12,8 @@ export default {
         statement: 'Bridging the gap between Design and Development.',
         interests: 'UI Development, Designsystems, Atomic Design, UX Design, Frontend Consulting',
         tooling: 'React, Redux, Apollo, Sketch, Zeplin, Javascript, Foundation, Ant.Design, Material UI, React Navigation, SASS',
+        phone: '+49 160 947 499 26',
+        email: 'ds@campsafari.de',
     },
 
     'roles': {
