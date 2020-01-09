@@ -1,9 +1,15 @@
 body {
     font-family: "Lekton", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-        background: #eee;
-    @media screen {
-    }
+    background: #eee;
 }
+
+@page {
+    margin: 2cm 2cm 1cm 2cm;
+}
+@page :first {
+    margin-top: 1cm;
+}
+
 
 .app {
     max-width: 1024px;
@@ -30,8 +36,36 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
+.flex-child-align-end {
+    align-self: flex-end;
+}
+
+.flex-justify-space-between {
+    justify-content: space-between;
+}
+
 .no-wrap {
     white-space: nowrap;
+}
+
+
+dl {
+    width: 230px;
+    display: flex;
+    flex-flow: row wrap;
+
+    dt {
+        flex-basis: 30%;
+        text-align: right;
+        font-weight: bold;
+    }
+    dd {
+        flex-basis: 70%;
+        text-align: left;
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 8px;
+    }
 }
 
 $spacing: (
@@ -39,7 +73,7 @@ $spacing: (
     small: 8px,
     medium: 16px,
     large: 24px,
-    xlarge: 32px,
+    xlarge: 48px,
 );
 
 
@@ -110,6 +144,12 @@ $spacing: (
     font-size: 22px;
     font-weight: 700;
     line-height: 16px;
+
+    @media print {
+        display: inline-block;
+        break-after: avoid;
+        page-break-after: avoid;
+    }
 }
 
 .headline-level-2 {
@@ -130,13 +170,13 @@ $spacing: (
 }
 
 
-
 .item-grid {
-    margin: 0 -8px;
-    display: flex;
-    flex-wrap: wrap;
 
     @media screen {
+        margin: 0 -8px;
+        display: flex;
+        flex-wrap: wrap;
+
         .cell {
             width: 33.333%;
             padding: 0 8px;
@@ -148,10 +188,27 @@ $spacing: (
     @media print {
         margin: 0;
         .cell {
+
+            display: inline-block;
+            break-inside: avoid;
             width: 100%;
             margin-bottom: 8px;
+
+            &:after {
+                content: '';
+                display: block;
+                height: 0px;
+                visibility: hidden;
+            }
         }
     }
+}
+
+.item {
+    break-inside: avoid;
+    font-size: 14px;
+    text-align: left;
+    color: #444;
 }
 
 .info-box {
@@ -179,27 +236,7 @@ $spacing: (
 }
 
 .section {
-    align-self: center;
-}
-
-.item-list {
-
-}
-
-.item {
-    font-size: 14px;
-    text-align: left;
-    color: #444;
-}
-
-.item-title {
-    font-size: 16px;
-    line-height: 16px;
-    margin: 0 0 8px 0;
-    color: #222;
-}
-
-.item-subtitle {
-    font-size: 14px;
-    margin: 0 0 8px 0;
+    @media screen {
+        align-self: center;
+    }
 }

@@ -33,7 +33,7 @@ function formatDate( datestr ) {
 function App() {
     return (
         <div className="app horizontal-pad-large">
-            <section className="section bottom-space-xlarge flex-container flex-dir-row flex-align-center">
+            <section className="section bottom-space-xlarge flex-container flex-dir-row  flex-justify-space-between">
                 <div className={ 'info-box bottom-space-large right-space-small' }>
                     <div>
                         <h2 className={ 'info-name' }>{ Portfolio.info.name }</h2>
@@ -43,20 +43,24 @@ function App() {
                         <div>{ Portfolio.info.country }</div>
                     </div>
                 </div>
-                <div className={'flex-container flex-dir-row'}>
-                    <div className={'horizontal-pad-small'}>
-                        <h2 className={ 'headline-level-1 bottom-space-medium' }>Expertise</h2>
-                        <div className={ 'text-small' }>{ Portfolio.info.interests }</div>
-                        <div className={ 'text-small' }>{ Portfolio.info.tooling }</div>
-                    </div>
-                    <div className={'horizontal-pad-small'}>
-                        <h2 className={ 'headline-level-1 bottom-space-medium' }>Contact</h2>
-                        <div className={ 'text-small no-wrap' }><strong>PHONE</strong> { Portfolio.info.phone }</div>
-                        <div className={ 'text-small no-wrap' }><strong>E-MAIL</strong> { Portfolio.info.email }</div>
-                        <div className={ 'text-small' }><a href={"https://www.linkedin.com/in/daniel-schillat-a79464100/"} target={'blank'}>LinkedIn</a></div>
-                        <div className={ 'text-small' }><a href={"https://www.xing.com/profile/Daniel_Schillat"} target={'blank'}>XING</a></div>
-                    </div>
+                <div className={'text-small align-self-end'}>
+                    <dl>
+                        <dt>PHONE</dt>
+                        <dd>{ Portfolio.info.phone }</dd>
+                        <dt>EMAIL</dt>
+                        <dd>{ Portfolio.info.email }</dd>
+                        <dt>LINKEDIN</dt>
+                        <dd><a href={"https://www.linkedin.com/in/daniel-schillat-a79464100/"} target={'blank'}>Visit</a></dd>
+                        <dt>XING</dt>
+                        <dd><a href={"https://www.xing.com/profile/Daniel_Schillat"} target={'blank'}>Visit</a></dd>
+                    </dl>
                 </div>
+            </section>
+
+            <section className="section bottom-space-xlarge">
+                <h2 className={ 'headline-level-1 bottom-space-medium' }>Expertise</h2>
+                <div className={ 'text-small' }>{ Portfolio.info.interests }</div>
+                <div className={ 'text-small' }>{ Portfolio.info.tooling }</div>
             </section>
 
             <ItemGrid
@@ -74,7 +78,6 @@ function App() {
                     />
                 ) }
             />
-
             <ItemGrid
                 title={ Portfolio.roles.title }
                 items={ Portfolio.roles.items }
