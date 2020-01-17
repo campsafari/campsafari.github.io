@@ -10,7 +10,7 @@ function Item ({title, subtitle, date, details, description, link}){
                 <div className={'text-small bottom-space-tiny'}>{details}</div>
             )}
             {description && (
-                <div className={'text-small bottom-space-tiny'}>{description}</div>
+                <div className={'text-small bottom-space-tiny print-only'}>{description}</div>
             )}
             {link && (
                 <a className={'item-link'} href={link}>Link</a>

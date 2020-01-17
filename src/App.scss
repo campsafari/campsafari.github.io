@@ -130,6 +130,11 @@ $spacing: (
     }
 }
 
+.print-only {
+    @media screen {
+        display: none;
+    }
+}
 
 .text-tiny {
     font-size: 14px;

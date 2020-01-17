@@ -9,29 +9,29 @@ export default {
         city: 'Berlin',
         zip: '10829',
         country: 'Germany',
-        statement: 'Bridging the gap between Design and Development.',
-        interests: 'UI Development, Designsystems, Atomic Design, UX Design, Frontend Consulting',
-        tooling: 'React, Redux, Apollo, Sketch, Zeplin, Javascript, Foundation, Ant.Design, Material UI, React Navigation, SASS',
+        intro: `I am specialized in UI Development with over 20 years of experience in that area.
+        Lately my focus lies in developing component systems for large scale and multi platform use cases and bringing together designers and developers.`,
+        tooling: 'The tools i heavily use include: React, React Native, Redux, Apollo, Sketch, Zeplin, Javascript, Foundation, Ant.Design, Material UI, SASS',
         phone: '+49 160 947 499 26',
         email: 'ds@campsafari.de',
     },
 
     'roles': {
-        title: 'Where i worked:',
+        title: 'Experience:',
         items: [
             {
                 'from': '01.05.2017',
                 'to': '',
                 'role': 'Senior Frontend Developer',
                 'company': 'Exozet',
-                'description': '',
+                'description': 'In this role i was mostly leading frontend development teams and helping the developers with the transition to modern tech stacks like React, Apollo and Redux as well as laying the foundations of that particular projects.',
             },
             {
                 'from': '01.01.2015',
                 'to': '31.04.2017',
                 'role': 'Senior Frontend Developer',
                 'company': 'Zalando SE',
-                'description': '',
+                'description': 'I was hired as a lead developer to kick start Zalando´s curating shopping platform.',
             },
             {
                 'from': '01.01.2010',
@@ -78,15 +78,15 @@ export default {
         ],
     },
     'projects': {
-        title: 'Projects:',
+        title: 'Selected Projects:',
         items: [
             {
                 title: 'Big Brother App',
                 role: 'Lead Developer',
                 from: '01.12.2019',
                 to: '01.03.2020',
-                tools: 'React Native',
-                description: '',
+                tools: 'React Native, Apollo Client, GraphQl',
+                description: 'Development of the mobile app for the TV show "Big Brother" with React-Native and Apollo Client',
                 link: '',
             },
             {
@@ -95,7 +95,7 @@ export default {
                 from: '01.12.2018',
                 to: '01.05.2019',
                 tools: 'SASS, Foundation, Javascript, Atomic Design',
-                description: '',
+                description: 'Development of the foundation for frontend components and bridging the gap between design and development. This was done by establishing a common lingo for modules and components, setting up the workflow between design and development via sketch and zeplin as well as defining component APIs for engineering.',
                 link: 'https://www.3sat.de',
             },
             {
@@ -103,7 +103,7 @@ export default {
                 role: 'Lead Developer',
                 from: '01.12.2018',
                 to: '01.05.2019',
-                tools: 'React Native, Redux, Atomic Design',
+                tools: 'React Native, Redux, RxJS, Atomic Design',
                 description: '',
                 link: 'https://apps.apple.com/de/app/3sat-mediathek/id687276377',
             },
@@ -112,8 +112,8 @@ export default {
                 role: 'Lead Frontend Developer',
                 from: '01.06.2019',
                 to: '',
-                tools: 'React Native, Redux, Atomic Design',
-                description: '',
+                tools: 'Foundation, Javascript, SASS, Redux, React',
+                description: 'Establishing a solid component foundation and a partly migration of the existing stack based on twig and spring boot to react and redux. The migration was done gradually via react portals.',
                 link: 'https://apps.apple.com/de/app/3sat-mediathek/id687276377',
             },
             {
@@ -121,7 +121,7 @@ export default {
                 role: 'Frontend Developer',
                 from: '01.05.2017',
                 to: '31.12.2017',
-                tools: 'React Native, Redux',
+                tools: 'React Native, Redux, RxJS',
                 description: '',
                 link: '',
             },
@@ -131,7 +131,7 @@ export default {
                 from: '01.01.2015',
                 to: '31.03.2017',
                 tools: 'SASS, Javascript, Foundation, Scala, Atomic Design',
-                description: 'Implementation of the frontend architecture based on "Atomic Design" principles.',
+                description: 'Implementation of the client facing frontend architecture based on "Atomic Design" principles. Further development of an admin interface in React for managing orders and assembling outfits for clients.',
                 link: 'https://www.zalon.de',
             },
             {
@@ -140,7 +140,7 @@ export default {
                 from: '01.01.2003',
                 to: '31.10.2016',
                 tools: 'SASS, Javascript, Magento, PHP, Atomic Design, AWS',
-                description: 'Responsive Onlineshop für den berliner Sneakerstore Solebox.',
+                description: 'Responsive Onlineshop for the berlin based sneaker Boutique Solebox.',
                 link: 'expired',
             },
             {
@@ -149,7 +149,7 @@ export default {
                 from: '09.01.2014',
                 to: '31.12.2014',
                 tools: 'Javascript, SASS, HTML',
-                description: 'Responsive Website für den deutschen Verlag Ernst und Sohn.',
+                description: 'Responsive Website for the german publisher "Ernst und Sohn".',
                 link: 'https://www.ernst-und-sohn.de',
             },
             {
@@ -158,7 +158,7 @@ export default {
                 from: '02.01.2013',
                 to: '31.12.2013',
                 tools: 'Javascript, SASS, HTML',
-                description: 'Responsive Website für den Auftritt des RBB.',
+                description: 'Responsive Website for the german TV Channel RBB.',
                 link: 'https://www.rbb-online.de/',
             },
             {
@@ -167,7 +167,7 @@ export default {
                 from: '09.01.2012',
                 to: '31.12.2012',
                 tools: 'SASS, Javascript, HTML',
-                description: 'Smart-TV App des "Deutsche Welle Rundfunk".',
+                description: 'Smart-TV App for "Deutsche Welle Rundfunk".',
                 link: '',
             }, {
                 title: 'TV Digital',
@@ -175,7 +175,7 @@ export default {
                 from: '01.01.2011',
                 to: '08.31.2013',
                 tools: 'SASS, Javascript, HTML',
-                description: 'Programmierung eines digitalen Programmführers für iOS.',
+                description: 'Concept and Development of an EPG.',
                 link: '',
             }, {
                 title: 'Alpha Industries',
@@ -183,7 +183,7 @@ export default {
                 from: '01.01.2009',
                 to: '31.04.2009',
                 tools: 'Flex Builder, Actionscript 3, PHP, MySql, Illustrator, Photoshop, Apple Motion',
-                description: 'Konzept, Design & Development der Website und eines custom CMS.',
+                description: 'Concept, Design & Development of the Website and CMS.',
                 link: '',
             },
             {
@@ -192,7 +192,7 @@ export default {
                 from: '01.03.2010',
                 to: '31.04.2010',
                 tools: 'CSS, HTML, Javascript, PHP, Wordpress',
-                description: 'Programmierung der Website für Moonbootica',
+                description: 'Development of a custom Wordpress Theme',
                 link: '',
             },{
                 title: 'New Balance Lifestyle',
@@ -200,7 +200,7 @@ export default {
                 from: '01.01.2009',
                 to: '31.04.2009',
                 tools: 'Actionscript, Mysql, PHP',
-                description: 'Design & Development einer Microsite für die Lifestyle Sparte von New Balance.',
+                description: 'Design & Development of a microsite for New Balance Lifestyle.',
                 link: '',
             }, {
                 title: 'Plastic Particles',
@@ -208,7 +208,7 @@ export default {
                 from: '01.02.2003',
                 to: '31.04.2003',
                 tools: 'Actionscript 2, PHP, MySql',
-                description: 'Konzept und Development eines Jump and Run basierten Onlineshops für Designertoys.',
+                description: 'Concept & Development of a Jump\'n Run based Onlineshop',
                 link: '',
             }, {
                 title: 'RECON STORE',
@@ -216,7 +216,7 @@ export default {
                 from: '01.02.2003',
                 to: '31.04.2003',
                 tools: 'Actionscript, Cinema 4D, PHP',
-                description: 'Konzept, Design und Development eines E-Concept-Stores für das Label der New Yorker Künstler Futura 2000 und Stash.',
+                description: 'Concept, Design & Development of an E-Concept-Store for the fashion label "RECON" made by the New York artists Futura 2000 and Stash.',
                 link: '',
             },
         ],

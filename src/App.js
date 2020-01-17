@@ -58,11 +58,24 @@ function App() {
             </section>
 
             <section className="section bottom-space-xlarge">
-                <h2 className={ 'headline-level-1 bottom-space-medium' }>Expertise</h2>
-                <div className={ 'text-small' }>{ Portfolio.info.interests }</div>
+                <h2 className={ 'headline-level-1 bottom-space-medium' }>About</h2>
+                <div className={ 'text-small' }>{ Portfolio.info.intro }</div>
                 <div className={ 'text-small' }>{ Portfolio.info.tooling }</div>
             </section>
 
+            <ItemGrid
+                title={ Portfolio.roles.title }
+                items={ Portfolio.roles.items }
+                renderItem={ ( item, index ) => (
+                    <Item
+                        key={ index }
+                        title={ item.company }
+                        subtitle={ item.role }
+                        date={ `${ formatDate( item.from ) } - ${ formatDate( item.to ) }` }
+                        description={ item.description }
+                    />
+                ) }
+            />
             <ItemGrid
                 title={ Portfolio.projects.title }
                 items={ Portfolio.projects.items }
@@ -75,18 +88,6 @@ function App() {
                         details={ 'Tools: ' + item.tools }
                         description={ item.description }
                         link={ item.link }
-                    />
-                ) }
-            />
-            <ItemGrid
-                title={ Portfolio.roles.title }
-                items={ Portfolio.roles.items }
-                renderItem={ ( item, index ) => (
-                    <Item
-                        key={ index }
-                        title={ item.company }
-                        subtitle={ item.role }
-                        date={ `${ formatDate( item.from ) } - ${ formatDate( item.to ) }` }
                     />
                 ) }
             />
