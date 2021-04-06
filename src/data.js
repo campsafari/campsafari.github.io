@@ -11,7 +11,7 @@ export default {
         country: 'Germany',
         intro: `I am specialized in UI Development with over 20 years of experience in that area.
         Lately my focus lies in developing component systems for large scale and multi platform use cases and bringing together designers and developers.`,
-        tooling: 'The tools i heavily use include: React, React Native, Redux, Apollo, Sketch, Zeplin, Javascript, Foundation, Ant.Design, Material UI, SASS',
+        tooling: 'The tools i heavily use include: React, React Native, Apollo, NextJS, Typescript, Sketch, Zeplin, Javascript, Foundation, Material UI',
         phone: '+49 160 947 499 26',
         email: 'ds@campsafari.de',
     },
@@ -20,8 +20,15 @@ export default {
         title: 'Experience:',
         items: [
             {
-                'from': '01.05.2017',
+                'from': '01.04.2020',
                 'to': '',
+                'role': 'Lead Developer',
+                'company': 'AXA',
+                'description': 'AXA hired me to design and develop an internal process management application. This was build using NextJs, Apollo and Material Ui.',
+            },
+            {
+                'from': '01.05.2017',
+                'to': '31.03.2020',
                 'role': 'Senior Frontend Developer',
                 'company': 'Exozet',
                 'description': 'In this role i was mostly leading frontend development teams and helping the developers with the transition to modern tech stacks like React, Apollo and Redux as well as laying the foundations of that particular projects.',
@@ -80,6 +87,15 @@ export default {
     'projects': {
         title: 'Selected Projects:',
         items: [
+            {
+                title: 'The Masked Singer App',
+                role: 'Lead Developer',
+                from: '01.02.2020',
+                to: '31.03.2020',
+                tools: 'React Native, Apollo Client, GraphQl',
+                description: 'Development of the mobile app for the TV show "The Masked Singer" with React-Native and Apollo Client',
+                link: '',
+            },
             {
                 title: 'Big Brother App',
                 role: 'Lead Developer',
