@@ -20,11 +20,18 @@ export default {
         title: 'Experience:',
         items: [
             {
-                'from': '01.04.2020',
+                'from': '01.08.2021',
                 'to': '',
+                'role': 'Senior Development Consultant',
+                'company': 'Endava',
+                'description': '',
+            },
+            {
+                'from': '01.04.2020',
+                'to': '31.06.2021',
                 'role': 'Lead Developer',
                 'company': 'AXA',
-                'description': 'AXA hired me to design and develop an internal process management application. This was build using NextJs, Apollo and Material Ui.',
+                'description': 'AXA hired me to design and develop an internal process management application. This was build using NextJs, Apollo and Material UI.',
             },
             {
                 'from': '01.05.2017',

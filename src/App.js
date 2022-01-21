@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.scss'
 import Portfolio from './data'
-import ItemList from './components/item-list'
 import ItemGrid from './components/item-grid'
 import Item from './components/item'
 
