@@ -24,7 +24,7 @@ export default {
                 'to': '',
                 'role': 'Senior Development Consultant',
                 'company': 'Endava',
-                'description': '',
+                'description': 'I was hired to guide and lead the frontend team for the Veejoy streaming platform. The platform core consists of multiple REST apis and the frontend is built with NextJs and Apollo. The latter acts as a gateway for the apis and makes querying data in context very easy.',
             },
             {
                 'from': '01.04.2020',
