@@ -103,6 +103,19 @@ function App() {
                     />
                 ) }
             />
+            <ItemGrid
+                title={ Portfolio.education.title }
+                items={ Portfolio.education.items }
+                renderItem={ ( item, index ) => (
+                    <Item
+                        key={ index }
+                        title={ item.title }
+                        subtitle={ item.project }
+                        date={ item.date }
+                        details={ item.description }
+                    />
+                ) }
+            />
         </div>
     )
 }
