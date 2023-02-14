@@ -104,14 +104,15 @@ function App() {
                 ) }
             />
             <ItemGrid
+                classes="print-only"
                 title={ Portfolio.education.title }
                 items={ Portfolio.education.items }
                 renderItem={ ( item, index ) => (
                     <Item
                         key={ index }
                         title={ item.title }
-                        subtitle={ item.project }
-                        date={ item.date }
+                        subtitle={ item.subtitle }
+                        date={ `${ formatDate( item.from ) } - ${ formatDate( item.to ) }` }
                         details={ item.description }
                     />
                 ) }

@@ -293,8 +293,7 @@ export default {
                     'from': '01.01.1997',
                     'to': '31.12.1999',
                     'title': 'Multimedia Producer',
-                    'company': 'S.A.E. Institute',
-                    'description': '',
+                    subtitle: "S.A.E. Institute",
                 } ],
         },
     clients: [
