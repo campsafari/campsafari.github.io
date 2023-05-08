@@ -9,9 +9,8 @@ export default {
         city: 'Berlin',
         zip: '10829',
         country: 'Germany',
-        intro: `I am specialized in UI Development with over 20 years of experience in that area.
-        Lately my focus lies in developing component systems for large scale and multi platform use cases and bringing together designers and developers.`,
-        tooling: 'The tools i heavily use include: React, React Native, Apollo, NextJS, Typescript, Sketch, Zeplin, Javascript, Foundation, Material UI',
+        intro: 'I am specializing for over 20 years in the development of user facing applications.',
+        tooling: 'The tools i heavily use include: React, React Native, Apollo, NextJS, Typescript, Sketch, Zeplin, Figma, Material UI, Tailwind',
         phone: '+49 160 947 499 26',
         email: 'ds@campsafari.de',
     },
@@ -24,7 +23,7 @@ export default {
                 'to': '',
                 'role': 'Senior Development Consultant',
                 'company': 'Endava',
-                'description': 'I was hired to guide and lead the frontend team for the Veejoy streaming platform. The platform core consists of multiple REST apis and the frontend is built with NextJs and Apollo. The latter acts as a gateway for the apis and makes querying data in context very easy.',
+                'description': 'I was hired to guide and lead a team for a german video streaming platform. The platform consists of multiple REST apis, a graphql backend and the frontend was built with NextJs and Apollo. My responsibilities were backend & frontend coding, UX and development consulting, creating user flows in figma, project management, writing user stories for new features, validating feature requests made by the client and mentoring other developers in the team.',
             },
             {
                 'from': '01.04.2020',
