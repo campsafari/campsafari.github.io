@@ -21,6 +21,13 @@ export default {
             {
                 'from': '01.08.2021',
                 'to': '31.05.2023',
+                'role': 'Senior Frontend Developer',
+                'company': 'The Quality Group',
+                'description': 'Migrating multiple online shops built on different tech stacks to a single code base based on Remix / Shopify Hydrogen.',
+            },
+            {
+                'from': '01.08.2021',
+                'to': '31.05.2023',
                 'role': 'Senior Development Consultant',
                 'company': 'Endava',
                 'description': 'I was hired to guide and lead a team for a german video streaming platform. The platform consists of multiple REST apis, a graphql backend and the frontend was built with NextJs and Apollo. My responsibilities were backend & frontend coding, UX and development consulting, creating user flows in figma, project management, writing user stories for new features, validating feature requests made by the client and mentoring other developers in the team.',
