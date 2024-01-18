@@ -4,8 +4,9 @@
   "private": true,
   "homepage": "http://campsafari.github.io",
   "dependencies": {
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
