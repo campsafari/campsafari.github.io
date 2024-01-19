@@ -18,33 +18,6 @@ body {
   }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-}
-
-.flex-container {
-  display: flex;
-}
-
-.flex-dir-row {
-  flex-direction: row;
-}
-
-.flex-align-center {
-  align-items: center;
-}
-
-.flex-child-align-end {
-  align-self: flex-end;
-}
-
-.flex-justify-space-between {
-  justify-content: space-between;
-}
-
 .no-wrap {
   white-space: nowrap;
 }
@@ -69,67 +42,6 @@ dl {
     margin: 0;
     box-sizing: border-box;
     padding-left: 8px;
-  }
-}
-
-$spacing: (
-  tiny: 4px,
-  small: 8px,
-  medium: 16px,
-  large: 24px,
-  xlarge: 48px,
-  xxlarge: 90px,
-);
-
-@each $space, $value in $spacing {
-  .top-space-#{$space} {
-    margin-top: $value;
-  }
-  .bottom-space-#{$space} {
-    margin-bottom: $value;
-  }
-
-  .left-space-#{$space} {
-    margin-left: $value;
-  }
-  .right-space-#{$space} {
-    margin-right: $value;
-  }
-
-  .horizontal-space-#{$space} {
-    margin-right: $value;
-    margin-left: $value;
-  }
-
-  .vertical-space-#{$space} {
-    margin-top: $value;
-    margin-bottom: $value;
-  }
-
-  .left-pad-#{$space} {
-    padding-left: $value;
-  }
-
-  .right-pad-#{$space} {
-    padding-right: $value;
-  }
-
-  .top-pad-#{$space} {
-    padding-top: $value;
-  }
-
-  .bottom-pad-#{$space} {
-    padding-bottom: $value;
-  }
-
-  .horizontal-pad-#{$space} {
-    padding-left: $value;
-    padding-right: $value;
-  }
-
-  .vertical-pad-#{$space} {
-    padding-top: $value;
-    padding-bottom: $value;
   }
 }
 

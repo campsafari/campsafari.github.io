@@ -1,5 +1,73 @@
 // eslint-disable-next-line import/no-anonymous-default-export
-export default {
+
+type PositionItem = {
+  from: string;
+  to: string;
+  role: string;
+  company: string;
+  tools?: string;
+  description?: string;
+  responsibilities?: string;
+};
+
+type ProjectItem = {
+  title: string;
+  from: string;
+  to: string;
+  role: string;
+  tools: string;
+  description: string;
+  link: string;
+};
+
+type EducationItem = {
+  from: string;
+  to: string;
+  title: string;
+  subtitle: string;
+};
+
+type AwardItem = {
+  title: string;
+  date: string;
+  project: string;
+  description: string;
+};
+
+type Vitae = {
+  info: {
+    name: string;
+    date: string;
+    languages: string;
+    nationality: string;
+    address: string;
+    city: string;
+    zip: string;
+    country: string;
+    intro: string;
+    phone: string;
+    email: string;
+  };
+  roles: {
+    title: string;
+    items: PositionItem[];
+  };
+  projects: {
+    title: string;
+    items: ProjectItem[];
+  };
+  education: {
+    title: string;
+    items: EducationItem[];
+  };
+  awards: {
+    title: string;
+    items: AwardItem[];
+  };
+  clients: string[];
+};
+
+const data: Vitae = {
   info: {
     name: "Daniel Schillat",
     date: "18.06.1977",
@@ -9,11 +77,12 @@ export default {
     city: "Berlin",
     zip: "10829",
     country: "Germany",
-    intro: `I am a senior developer and consultant with a rich background of over 20 years specializing in frontend development that
-      is proficient in understanding and translating client needs into modern, scalable and maintainable solutions.
-      I bring a track record of successful delivery of medium to large projects from various industries as well as skills in leading development teams, conducting code reviews and offering strategic guidance to clients.
-      I am committed to stay up to date in modern frontend technologies and development methodologies allows me to contribute to cutting edge applications and the success of diverse projects.`,
-    tooling: "",
+    intro: `I am an experienced frontend developer and consultant with over 20 years in the field. My focus is on creating modern, scalable, and maintainable solutions by understanding and translating client needs into technical requirements.
+
+I bring a track record of successful delivery of medium to large projects from various industries as well as skills in leading development teams, conducting code reviews and offering strategic guidance to clients.
+
+I am committed to stay up to date in modern frontend technologies and development methodologies allows me to contribute to cutting edge applications and the success of diverse projects.`,
+
     phone: "+49 160 947 499 26",
     email: "ds@campsafari.de",
   },
@@ -104,16 +173,9 @@ export default {
 * Creating a robust codebase that can be easily extended and readily utilized by other developers`,
       },
       {
-        from: "01.01.2010",
-        to: "01.01.2011",
-        role: "Senior Developer",
-        company: "Brand New History",
-        description: "",
-      },
-      {
         from: "01.06.2003",
         to: "31.12.2016",
-        role: "Senior Frontend Developer",
+        role: "Senior Software Engineer",
         company: "Solebox",
         tools:
           "Magento, CSS, Javascript, PHP, AWS, MySql, Flash, Flex, Papervision 3D, Illustrator, Photoshop",
@@ -256,7 +318,7 @@ export default {
         tools: "SASS, Javascript, Magento, PHP, Atomic Design, AWS",
         description:
           "Responsive Onlineshop for the berlin based sneaker Boutique Solebox.",
-        link: "expired",
+        link: "https://www.solebox.com",
       },
       {
         title: "Ernst und Sohn",
@@ -336,8 +398,8 @@ export default {
       {
         title: "RECON STORE",
         role: "Lead Developer",
-        from: "01.02.2003",
-        to: "31.04.2003",
+        from: "01.02.2000",
+        to: "31.04.2000",
         tools: "Actionscript, Cinema 4D, PHP",
         description:
           'Concept, Design & Development of an E-Concept-Store for the fashion label "RECON" made by the New York artists Futura 2000 and Stash.',
@@ -424,3 +486,5 @@ export default {
     "ZDF",
   ],
 };
+
+export default data;
